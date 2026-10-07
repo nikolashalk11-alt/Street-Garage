@@ -1,0 +1,8 @@
+{
+  "name": "Street Garage - Ελαστικά, Service \u0026 24/7 Οδική Βοήθεια",
+  "description": "Street Garage - Εξειδικευμένο κέντρο ελαστικών, λιπαντικών, ανταλλακτικών και μηχανικών επισκευών στα Ιωάννινα. Ανοιχτά 24/7. Τηλέφωνο: 2651 313658.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

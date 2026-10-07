@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  --radius-xs: 2px;
+  --radius-sm: 2px;
+  --radius-md: 3px;
+  --radius-lg: 3px;
+  --radius-xl: 4px;
+  --radius-2xl: 4px;
+  --radius-3xl: 4px;
+  --radius-full: 4px;
+}
+
+:root {
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Hide scrollbars across all elements while keeping full scroll functionality */
+* {
+  scrollbar-width: none !important; /* Firefox */
+  -ms-overflow-style: none !important; /* IE and Edge */
+}
+
+*::-webkit-scrollbar {
+  display: none !important; /* Chrome, Safari, Opera */
+  width: 0 !important;
+  height: 0 !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  background-color: #121212;
+  color: #f8fafc;
+  overflow-x: hidden;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+/* 1. BODY FONT: Manrope everywhere for all text, paragraphs, lists, forms, spans (luxury precision engineering) */
+body, .font-sans, p, span, li, a, input, select, textarea, label {
+  font-family: var(--font-body);
+}
+
+body {
+  background-color: #121212;
+  color: #f8fafc;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 2. HEADINGS & ACTION BUTTONS: Outfit everywhere for all titles, cards, uppercase labels (luxury supercar prestige) */
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: var(--font-heading) !important;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Rectangular with sharp precision rounding (2px - 4px) across cards, buttons, badges, inputs */
+.btn-rect, button:not(.status-dot), input, select, textarea {
+  border-radius: 3px;
+}
+
+/* Greek uppercase typography: ensure case-sensitive forms without tonos */
+:lang(el) {
+  font-feature-settings: "case" 1;
+}
+
+/* Automotive accent palette */
+.text-garage-blue {
+  color: #2563eb;
+}
+
+.bg-garage-blue {
+  background-color: #1d4ed8;
+}
+
+.text-garage-grey {
+  color: #94a3b8;
+}
+
+.bg-garage-bg {
+  background-color: #121212;
+}
